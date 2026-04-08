@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Personal Website Design</title>
+    <link rel="stylesheet" href="gg1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header id="header" class="header">
+        <div class="container">
+            <nav>
+                <img src="imgs/logo3.jpg" alt="Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fas-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fas-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Aanavi</span> Kulal <br> from America</h1>
+            </div>       
+        </div> 
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="imgs/image2.jpg" alt="About Me" class="aimg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a UX/UI designer with background in media, education and project management.
+                     I love creating intuitive, interactive and impressive products that meet users, business and tech needs.</p>
+                    <div class="tab-titles">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span style="color: crimson;">UI/UX:</span> <br>Designing Web/App interfaces</li>
+                            <li><span style="color: crimson;">Web Development:</span> <br>Web app development</li>
+                            <li><span style="color: crimson;">App Development:</span> <br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span style="color: crimson;">2024-Present:</span> <br>UI/UX Design Training at ET Institute</li>
+                            <li><span style="color: crimson;">2022-2024:</span> <br>Team Lead at StartApp LLC</li>
+                            <li><span style="color: crimson;">2020-2022:</span> <br>UI/UX Design Executive at Coin Digital Ltd</li>
+                            <li><span style="color: crimson;">2019-2020:</span> <br>Internship at Elart eCommerce</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span style="color: crimson;">2019:</span> <br>UI Design Training at ET Institute</li>
+                            <li><span style="color: crimson;">2019:</span> <br>MBA from MIT Bangalore</li>
+                            <li><span style="color: crimson;">2017:</span> <br>BBA from ISM Bangalore</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div class="service">
+                    <i class="fa fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Website design is a process of designing and implementing the website which includes the analysis, design, development and maintenance.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="service">
+                    <i class="fa fa-laptop icon"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>user research, research reports, sketches, wireframes, user flows, wireflows, user stories, customer journey maps, prototypes, user-testing, and the final product.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="service">
+                    <i class="fa fa-mobile"></i>
+                    <h2>App Design</h2>
+                        <p>Designers
+                            Expert UI, UX, Visual, and Interaction designers as well as a wide range of illustrators, animators, and more.
+                        </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <!-- My Work Section -->
+    <section class="work-section" id="portfolio">
+        <h1 class="section-title">My Work</h1>
+
+        <!-- Card for Social Media App -->
+        <div class="card" style="background-image: url('imgs/img1.jpg');">
+            <div class="card-content">
+                <h2>Social Media App</h2>
+                <p>Connect with friends and explore trending topics worldwide.</p>
+            </div>
+        </div>
+
+        <!-- Card for Music App -->
+        <div class="card" style="background-image: url('imgs/img2.jpg');">
+            <div class="card-content">
+                <h2>Music App</h2>
+                <p>Discover new music and create personalized playlists.</p>
+            </div>
+        </div>
+
+        <!-- Card for Online Shopping App -->
+        <div class="card" style="background-image: url('imgs/img3.jpg');">
+            <div class="card-content">
+                <h2>Online Shopping App</h2>
+                <p>Shop the latest trends and find exclusive deals online.</p>
+            </div>
+        </div>
+        
+        
+            
+
+    </section>
+
+   
+          <!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa fa-envelope"></i> contact@example.com</p>
+                <p><i class="fa fa-phone"></i> 8756483923</p>
+                <div id="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <br><br>
+
+                <!-- Button to download and open PDF -->
+                <a href="my-cv.pdf" download>
+                    <button type="button" class="dbtn">
+                        <i class="fa fa-download"></i> Download CV
+                    </button>
+                </a>
+            </div>
+
+            <div class="contact-right">
+                <form method="post" name="myform" onsubmit="return validateemail();">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                
+                <!-- Success message div -->
+                <div id="success-message" style="display: none; color: #61b752; margin-top: 10px;">
+                    Information Submitted Successfully.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function validateemail() {
+    var form = document.myform;
+    var emailValue = form.email.value;
+    var atPosition = emailValue.indexOf("@");
+    var dotPosition = emailValue.lastIndexOf(".");
+    var successMessageDiv = document.getElementById("success-message");
+
+    // Clear any previous success message visibility
+    successMessageDiv.style.display = "none";
+
+    // Check if the email is valid
+    if (atPosition < 1 || dotPosition < atPosition + 2 || dotPosition + 2 >= emailValue.length) {
+        alert("Please enter a valid e-mail address \n atposition:" + atPosition + "\n dotposition:" + dotPosition);
+        return false;
+    } else {
+        // Display the success message below the submit button
+        successMessageDiv.style.display = "block";
+
+        // Clear the form fields
+        form.name.value = "";
+        form.email.value = "";
+        form.message.value = "";
+
+        // Hide the success message after 5 seconds
+        setTimeout(function() {
+            successMessageDiv.style.display = "none";
+        }, 5000);
+
+        // Prevent form submission to keep the message visible temporarily
+        return false;
+    }
+}
+
+</script>
+
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-link");
+        var tabcontents = document.getElementsByClassName("tab-content");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+      
+               
+
+   
+</body>
+
+</html>
